@@ -1,9 +1,17 @@
 import React from 'react';
 import PlaceAndTime from '../components/PlaceAndTime';
 import { GROOM_TEXT, BRIDE_TEXT, BRIDEGROOM_TEXT } from '../constants';
+import Image from 'next/image';
 const Location = () => {
 	return (
-		<section className='w-screen bg-marble-white flex flex-col items-center px-5 py-5 gap-2 font-serif'>
+		<section className='w-screen bg-marble-white flex flex-col items-center px-5 py-5 gap-2 font-serif border-[1px] border-solid border-marble-blue'>
+			<Image
+				src={'/wedding ring.png'}
+				alt='curly-palm'
+				width={50}
+				height={50}
+				className='opacity-90'
+			/>
 			<p className='lg:w-1/2 text-center'>
 				Merupakan suatu kebahagian bagi kami sekeluarga. Apabila
 				Bapak/Ibu Saudara/I berkenan hadir untuk memberikan doa restu
