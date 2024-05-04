@@ -15,7 +15,7 @@ const Profile = ({ name, text, address, father, mother }: Profile) => {
 			<span className='font-serif capitalize'>
 				{father} & {mother}
 			</span>
-			<span className='capitalize'>{address}</span>
+			<span className='capitalize text-center'>{address}</span>
 		</div>
 	);
 };
