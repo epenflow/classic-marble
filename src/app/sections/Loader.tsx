@@ -35,12 +35,12 @@ export const Loader = () => {
 							stiffness: 150,
 						},
 					}}
-					className='fixed h-screen w-screen bg-marble-white px-2 py-5 flex flex-col justify-between items-center z-50 font-serif'>
-					<h1 className='text-2xl font-serif uppercase text-center'>
+					className='fixed h-screen w-screen bg-marble-white px-2 py-20 flex flex-col justify-between items-center z-50 font-serif'>
+					<h1 className='text-lg lg:text-2xl font-serif uppercase text-center z-50'>
 						the wedding of
 					</h1>
 					<BrideGroom className='z-50' />
-					<div className='flex flex-col text-center text-xl z-20'>
+					<div className='flex flex-col text-center z-20'>
 						<span className='text-start capitalize'>
 							kepada&nbsp;:
 						</span>
@@ -52,7 +52,7 @@ export const Loader = () => {
 							{kepada ? kepada : 'undangan'}
 						</span>
 						<WidthLine />
-						<span className='text-lg'>
+						<span>
 							Mohon maaf apabila ada kesalahan penulisan
 							nama/gelar
 						</span>
