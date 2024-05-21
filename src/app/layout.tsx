@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { hendangan, lovera, newyork } from './constants/font';
-import { BRIDEGROOM_TEXT } from './constants';
+import { BRIDE_BIODATA, GROOM_BIODATA } from './constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: `${BRIDEGROOM_TEXT.groom} & ${BRIDEGROOM_TEXT.bride}`,
+	title: `${GROOM_BIODATA.nickname} & ${BRIDE_BIODATA.nickname}`,
 	icons: {
 		icon: {
 			url: '/WEDDING ICON.svg',

@@ -4,7 +4,7 @@ import React from 'react';
 import cn from '../utils/cn';
 import { useContextProvider } from '../utils/context/Context';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BrideGroom } from '../components/BrideGroom';
+import Nickname from '../components/Nickname';
 import { WidthLine } from '../components/Line';
 import Image from 'next/image';
 export const Loader = () => {
@@ -39,7 +39,7 @@ export const Loader = () => {
 					<h1 className='text-lg lg:text-2xl font-serif uppercase text-center z-50'>
 						the wedding of
 					</h1>
-					<BrideGroom className='z-50' />
+					<Nickname className='z-50' />
 					<div className='flex flex-col text-center z-20'>
 						<span className='text-start capitalize'>
 							kepada&nbsp;:

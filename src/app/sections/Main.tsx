@@ -1,9 +1,8 @@
 import React from 'react';
-import { BRIDE_TEXT, GROOM_TEXT } from '../constants';
-import Profile from '../components/Profile';
 import Image from 'next/image';
+import Profile from '../components/Profile';
 
-const Biodata = () => {
+const Main = () => {
 	return (
 		<section className='h-screen w-screen px-5 py-4 bg-marble-white flex flex-col gap-1.5 font-serif items-center relative'>
 			<h1 className='font-newyork text-4xl z-10'>Om Swastiastu</h1>
@@ -12,23 +11,7 @@ const Biodata = () => {
 				sekeluarga bermaksud menyelenggarakan upacara manusia yadnya
 				Pawiwahan/Pernikahan Putra - Putri kami.
 			</p>
-			<div className='flex flex-col items-center w-full m-auto z-10'>
-				<Profile
-					name={GROOM_TEXT.name}
-					text={GROOM_TEXT.text}
-					address={GROOM_TEXT.address}
-					father={GROOM_TEXT.father}
-					mother={GROOM_TEXT.mother}
-				/>
-				<span className='font-newyork text-4xl lg:text-6xl'>&</span>
-				<Profile
-					name={BRIDE_TEXT.name}
-					text={BRIDE_TEXT.text}
-					address={BRIDE_TEXT.address}
-					father={BRIDE_TEXT.father}
-					mother={BRIDE_TEXT.mother}
-				/>
-			</div>
+			<Profile />
 			<p className='lg:w-1/2 text-center z-10'>
 				&quot; Ya Tuhan, anugerahkanlah kepada pasangan pengantin ini
 				kebahagiaan, keduanya tiada terpisahkan dan panjang umur. Semoga
@@ -47,4 +30,4 @@ const Biodata = () => {
 	);
 };
 
-export default Biodata;
+export default Main;
