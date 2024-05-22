@@ -28,6 +28,7 @@ export const Loader = () => {
 				<motion.section
 					exit={{
 						translateY: '-100vh',
+						opacity: 0,
 						transition: {
 							duration: 1.5,
 							type: 'spring',
@@ -36,11 +37,25 @@ export const Loader = () => {
 						},
 					}}
 					className='fixed h-screen w-screen bg-marble-white px-2 py-20 flex flex-col justify-between items-center z-50 font-serif'>
-					<h1 className='text-lg lg:text-2xl font-serif uppercase text-center z-50'>
+					<motion.h1
+						initial={{ y: -100, opacity: 0 }}
+						animate={{
+							y: 0,
+							opacity: 100,
+							transition: { duration: 0.5, ease: 'easeIn' },
+						}}
+						className='text-lg lg:text-2xl font-serif uppercase text-center z-50'>
 						the wedding of
-					</h1>
+					</motion.h1>
 					<Nickname className='z-50' />
-					<div className='flex flex-col text-center z-20'>
+					<motion.div
+						initial={{ y: 100, opacity: 0 }}
+						animate={{
+							y: 0,
+							opacity: 100,
+							transition: { duration: 0.5, ease: 'easeIn' },
+						}}
+						className='flex flex-col text-center z-20'>
 						<span className='text-start capitalize'>
 							kepada&nbsp;:
 						</span>
@@ -61,14 +76,14 @@ export const Loader = () => {
 							className='py-1.5 bg-marble-blue text-marble-white capitalize'>
 							buka undangan
 						</button>
-						<Image
-							src={'/rose.png'}
-							alt='rose'
-							width={500}
-							height={500}
-							className='absolute bottom-2 -z-10 left-1/2 -translate-x-1/2 opacity-50'
-						/>
-					</div>
+					</motion.div>
+					<Image
+						src={'/rose.png'}
+						alt='rose'
+						width={500}
+						height={500}
+						className='absolute bottom-2 -z-10 left-1/2 -translate-x-1/2 opacity-50'
+					/>
 				</motion.section>
 			) : null}
 		</AnimatePresence>
